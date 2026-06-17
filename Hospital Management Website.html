@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life Care Hospital</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ffffff, #22c55e);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0c52e9, #22c55e);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+    }
+
+    /* Section title */
+    .section-title {
+      font-weight: 700;
+      margin: 40px 0 20px;
+      text-align: center;
+      color: #0f172a;
+    }
+
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Emergency */
+    .emergency {
+      background: linear-gradient(135deg, #ef4444, #f97316);
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .btn-custom {
+      background: #0ea5e9;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .btn-custom:hover {
+      background: #0284c7;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h1>Welcome to Life Care Hospital</h1>
+  <img style=" width:33%;text-align:center;"src="103.jpeg">
+  <p>We care for your health with advanced medical services & expert doctors</p>
+</section>
+
+<div class="container">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold">🏥Life Care Hospital</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#emergency">Emergency</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Departments -->
+  <h2 id="departments" class="section-title"> Our Departments🧑‍⚕️</h2>
+
+  <div style="text-align:center;" class="row g-4">
+     <img style=" width:33%;"src="96.jpeg">
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h5>Cardiology ❤️</h5>
+        <p>Heart care, ECG, BP treatment</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+       
+        <h5>Neurology 🧠</h5>
+        <p>Brain, stroke & nerve treatment</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h5>Orthopedics 🦴</h5>
+        <p>Bone fractures & joint pain</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h5>Pediatrics 👶</h5>
+        <p>Child health & vaccination</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h5>Dermatology 🧴</h5>
+        <p>Skin, hair & allergy treatment</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h5>General Medicine 🏥</h5>
+        <p>Fever, infection & routine checkups</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Appointment -->
+  <h2 id="appointment" class="section-title">📅 Book Appointment</h2>
+  <img style=" width:33%;"src="101.jpeg">
+  <div class="card p-4">
+    <form class="row g-3">
+
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Patient Name">
+      </div>
+
+      <div class="col-md-6">
+        <input type="tel" class="form-control" placeholder="Phone Number">
+      </div>
+
+      <div class="col-md-6">
+        <select class="form-select">
+          <option>Select Department</option>
+          <option>Cardiology</option>
+          <option>Neurology</option>
+          <option>Orthopedics</option>
+          <option>Pediatrics</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="col-md-3">
+        <input type="time" class="form-control">
+      </div>
+
+      <div class="col-12">
+        <textarea class="form-control" rows="3" placeholder="Describe your problem"></textarea>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-custom w-100">Book Appointment</button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Emergency -->
+  <h2 id="emergency" class="section-title">🚨 Emergency Services</h2>
+
+  <div class="emergency">
+    <img style=" width:33%;text-align:center;"src="107.jpeg"
+    <h3>24/7 Emergency Care Available</h3>
+    <p>Immediate response for accidents, heart attacks, and critical cases</p>
+    <h4>📞 Emergency Helpline: 108 / 112</h4>
+    <button class="btn btn-light mt-2">Call Ambulance</button>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  © 2026 Life Care Hospital | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
